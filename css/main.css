@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* reset pentru layout */
+body,html{
+  height: 100%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  margin:0;
+}
+ul{
+  list-style-type: square;
+}
+
+/* colours */
+.__violet{
+  background-color:#892890;
+}
+.__yellow{
+  background-color: #F58220;
+}
+.__blue{
+  background-color: #0089CF;
+}
+.__green{
+  background-color: #23B24B;
+}
+.__blue_light{
+  background-color: #DCEAF6;
+}
+.__violet_light{
+  background-color: #E9E1EE;
+}
+.__yellow_light{
+  background-color: #FAAF71;
+}
+.__c_violet{
+  color:#892890;
+}
+.__c_blue{
+  color:#0089CF;
+}
+.__c_white{
+  color:white;
+}
+.__textarea-violet{
+  background-color:#B78ABE;
+}
+.__textarea-blue{
+  background-color:#C7DFF2;
+}
+/**** COLOURS ****/
+
+/* header */
+#header{
+  display: flex;
+  background-color: #E6E7E9;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+#header p{
+  display: block;
+  flex-grow: 0.5;
+  padding: 1rem;
+}
+#header p:nth-child(1){
+  background-color: #DA1F3D;
+}
+#header p:nth-child(2){
+  text-align: right;
+  color: #9953A1;
+  flex-grow: 3
+}
+#header p:nth-child(3){
+  background-color: #892890;
+}
+/**** HEADER  ****/
+
+/* capitol explorare */
+#container{
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.title{
+  font-size: 1.2rem;
+  /* margin-bottom: 1rem; */
+}
+.title >p{
+  color:#F78520;
+}
+.top-segment-title{
+  width: 250px;
+  margin-top:1.5rem;
+  padding:5px 5px 5px 15px;
+}
+.top-segment-title >p{
+  color:white;
+  margin: 0;
+}
+.box{
+  display:  flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.box > p{
+  padding-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.box-row{
+  display: flex;
+  width: 100%;
+  padding-bottom: 1rem;
+  align-items: stretch;
+}
+.column-text{
+  width: 30%;
+  margin-right: 3rem;
+}
+textarea{
+  width: 70%;
+  color: white;
+  padding: 5px;
+  margin: 0;
+  border: 0;
+}
+textarea::placeholder{
+  text-align: center;
+  color: white;
+}
+/****   CAPITOL EXPLORARE ****/
+
+/* capitol repere */
+
+.no-box-description{
+  margin:1rem;
+}
+.no-box-description p{
+  padding-bottom: 1rem;
+}
+.no-box-description span{
+  color:#F58220;
+}
+
+/**** CAPITOL REPERE ****/
+
+/* capitol aplicatii */
+.col-main{
+  /* flex-grow: 1; */
+  width: 50%;
+  margin-left: 0.5rem;
+}
+.col-left-title{
+  /* padding: 5px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 80%;
+  float: right;
+  text-align: center;
+}
+.col-left-item{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+.arrowed-content{
+  height: 100%;
+  position: relative;
+  width: 20%;
+}
+.arrowed-content p{
+  margin-top: 25%;
+
+}
+.col-left-item textarea{
+  width: 80%;
+  height: 100%;
+}
+.arrow-down {
+  right:0;
+  left: 0;
+  margin: auto;
+  margin-top: -10px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position:absolute;
+  border-top: 20px solid #0089CF;
+}
+.col-right-title{
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.col-right-item{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100px;
+}
+.col-right-item textarea{
+  width: 100%;
+  height: 100%;
+}
+div.__invisible{
+  visibility: hidden;
+}
+.col-main textarea{
+  color:#0089CF
+}
+.col-main textarea::placeholder{
+  color:#0089CF
+}
+
+          /** aplicatii punct 2 **/
+.secondary-row{
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+
+.secondary-col{
+  width:80%;
+  margin: 2px;
+  padding: 5px;
+  background-color: #C7DFF2;
+  text-align: center;
+}
+.checkbox-col{
+  width:10%;
+  background-color: #C7DFF2;
+  margin: 2px;
+  padding: 5px;
+  text-align: center;
+}
+.__darker-blue{
+  background-color: #5BABDF;
+}
+
+
+/**** CAPITOL APLICATII ***/
+
+
+
+/* capitol provocari */
+    /* content intra in categoria de la repere */
+/**** CAPITOL PROVOCARI ****/
+
+/* layout mobil */
+@media only screen and (max-width: 600px) {
+  #header{
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+  #header p{
+    padding: 15px 10px 15px 10px;
+  }
+
+  #container{
+    margin:0;
+    margin-top: 1rem;
+  }
+  .top-segment-title{
+    width:auto;
+  }
+  .box-row {
+    flex-direction: column;
+  }
+  .column-text{
+    width: 100%;
+  }
+  textarea{
+    width:100%;
+  }
+
+  .col-main{
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom:1rem;
+    margin-left: 0;
+  }
+  .arrowed-content{
+    width: 30%;
+  }
+  div.__invisible{
+    visibility: visible;
+  }
+
+}
+
+
+/***** LAYOUT MOBIL ****/
